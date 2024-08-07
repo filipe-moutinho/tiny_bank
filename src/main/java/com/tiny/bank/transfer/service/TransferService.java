@@ -22,19 +22,19 @@ public class TransferService {
 
     public void create(@NonNull Transfer transfer) {
         User fromUser = this.userService.get(transfer.fromUsername());
-        validateUser(fromUser);
+        validateUser(fromUser, transfer.fromUsername());
         User toUser = this.userService.get(transfer.toUsername());
-        validateUser(toUser);
+        validateUser(toUser, transfer.toUsername());
         validateAmount(transfer.amount());
         this.transactionService.transfer(fromUser, toUser, transfer.amount());
     }
 
-    private static void validateUser(User user) {
+    private static void validateUser(User user, String username) {
         if (user == null) {
-            throw new ResourceNotFoundException("User not found");
+            throw new ResourceNotFoundException("User not found: " + username);
         }
         if (!user.isActive()) {
-            throw new BadRequestException("User is not active");
+            throw new BadRequestException("User is not active: " + username);
         }
     }
 
