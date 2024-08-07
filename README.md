@@ -1,7 +1,7 @@
 # Tiny Bank
 
 ## Pre-requisites
-Assert that your machine has at least JAVA 17, Maven, and optionally Postman installed.
+Assert that your machine has at least JAVA 17, Maven, and optionally Postman installed. 
 
 ## Running the application
 
@@ -10,6 +10,8 @@ To run the application, execute the following command:
 ```shell
 ./mvnw spring-boot:run
 ```
+
+The application runs on http://localhost:8080.
 
 ## Endpoints
 There examples in the Postman collection located in "./postman/Tiny Bank_requests.postman_collection.json".
