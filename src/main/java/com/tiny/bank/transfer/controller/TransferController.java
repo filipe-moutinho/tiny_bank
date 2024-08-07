@@ -19,9 +19,7 @@ public class TransferController {
 
     @PostMapping("/transfer")
     public ResponseEntity<Void> post(@RequestBody Transfer transfer) {
-
         this.transferService.create(transfer);
-
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 }
