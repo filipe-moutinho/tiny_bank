@@ -48,6 +48,48 @@
 			"response": []
 		},
 		{
+			"name": "Deactivate User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/filipe/deactivate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"filipe",
+						"deactivate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Get  User",
 			"event": [
 				{
@@ -206,7 +248,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/users/mafalda/withdraw/50",
+					"raw": "http://localhost:8080/users/filipe/withdraw/25",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -214,9 +256,9 @@
 					"port": "8080",
 					"path": [
 						"users",
-						"mafalda",
+						"filipe",
 						"withdraw",
-						"50"
+						"25"
 					]
 				}
 			},

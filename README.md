@@ -17,6 +17,9 @@ There examples in the Postman collection located in "./postman/Tiny Bank_request
 ### Create User
 #### Path
     POST /users/{name}
+### Deactivate User
+#### Path
+    PATCH /users/{name}/deactivate
 ### Get User
     GET /users/{name}
 ### Get User Balance

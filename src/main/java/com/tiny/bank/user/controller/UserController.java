@@ -1,6 +1,5 @@
 package com.tiny.bank.user.controller;
 
-import com.tiny.bank.transaction.model.Transaction;
 import com.tiny.bank.user.model.User;
 import com.tiny.bank.user.service.UserService;
 import org.springframework.http.HttpStatus;
@@ -11,8 +10,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 
 @RestController
